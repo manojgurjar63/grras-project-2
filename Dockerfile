@@ -4,10 +4,7 @@ RUN yum install -y httpd vim wget unzip
 
 WORKDIR /var/www/html/
 
-RUN wget https://templatemo.com/download/tm-606-string-master -O template.zip \
-    && unzip template.zip \
-    && rm -f template.zip \
-    && cp -r tm-606-string-master/* /var/www/html/
+RUN git clone /var/www/html/https://github.com/startbootstrap/startbootstrap-clean-blog.git .
 
 EXPOSE 80
 
