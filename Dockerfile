@@ -5,7 +5,6 @@ RUN yum install -y httpd git unzip
 WORKDIR /var/www/html/
 
 CMD mkdir manoj
-CMD touch jos
 
 RUN rm -rf /var/www/html/*
 
