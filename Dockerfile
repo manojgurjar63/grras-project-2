@@ -12,4 +12,4 @@ RUN git clone https://github.com/startbootstrap/startbootstrap-clean-blog.git .
 
 EXPOSE 80
 
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
